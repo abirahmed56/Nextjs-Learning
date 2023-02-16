@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
-import { useEffect } from 'react';
+import operators from './operators';
 
 export default function calculator () {
     const [num, setNum] = useState("");
     const [num2, setNum2] = useState("");
-    const [result, setResult] = useState(undefined);
+    const [result, setResult] = useState(undefined)
 
     const handleInput1 = (e) => {
       const updatedNum = e.target.value;
@@ -18,22 +18,6 @@ export default function calculator () {
       setNum2(updatedNum2);
     }
 
-    const handleOperation = (e) => {
-      if(e.name=='sum'){
-        
-        setResult((e.target.num) + (e.target.num2));
-      }
-      else if(e.name=='sub'){
-        setResult((e.target.num) - (e.target.num2))
-      }else if(e.name=='mul'){
-        setResult((e.target.num) * (e.target.num2))
-      }else if(e.name=='div'){
-        setResult((e.target.num) / (e.target.num2))
-      }
-
-    }
-  
-
     return (
       < >
         <div>
@@ -45,10 +29,10 @@ export default function calculator () {
             value={num2}/>
         </div>
         <div>
-            <button name = 'sum'onClick={handleOperation}>+</button>
-            <button name = 'sub'onClick={handleOperation}>-</button>
-            <button name = 'mul'onClick={handleOperation}>*</button>
-            <button name = 'div'onClick={handleOperation}>/</button>
+            <button name = 'sum'onClick={()=>setResult(operators.add(num, num2))}>+</button>
+            <button name = 'sub'onClick={()=>setResult(operators.sub(num, num2))}>-</button>
+            <button name = 'mul'onClick={()=>setResult(operators.mul(num, num2))}>*</button>
+            <button name = 'div'onClick={()=>setResult(operators.div(num, num2))}>/</button>
 
         </div>
         <div>
