@@ -1,26 +1,9 @@
 import Link from "next/link";
+import Navbar from "./components/Navbar";
 const index = ()=>{
   return(
     <>
-      <nav>
-        <ul className="menu-bar">
-          <Link href="blogs/Home">
-             Home
-          </Link>
-          <Link href="blogs/about">
-            About
-          </Link>
-          <Link href="blogs/contact">
-             Contact
-          </Link>
-          <Link href="blogs">
-             Blog
-          </Link>
-          <Link href="blogs/product">
-            Product
-          </Link>
-        </ul>
-      </nav>
+      <Navbar/>
       <handler className = "handler">
         <div className="brand_box"></div>
         <div className="text_box">
@@ -31,7 +14,7 @@ const index = ()=>{
             <span>Love with JavaScript</span>
           </h1>
           <a href="#" className="btn btn_white btn_animated">
-            Thapa Technical
+            Abir
           </a>
         </div>
       </handler>

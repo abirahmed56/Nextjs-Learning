@@ -4,6 +4,7 @@ const Home = ()=>{
         <h1>
             hello world Home
         </h1>
+
       </>
     );
   };

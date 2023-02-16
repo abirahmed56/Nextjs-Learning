@@ -1,21 +1,8 @@
-import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-const ErrorPage = ()=>{
-    const router = useRouter();
-    const handleInput = ()=>{
-        router.push('/');
-    }
+const Navbar = ()=>{
+    return(
 
-    useEffect(() => {
-        setTimeout(()=>{
-            router.push('/');
-
-        },3000);
-    },[])
-    return (
-        <>
+        <div>
             <nav>
                 <ul className="menu-bar">
                 <Link href="blogs/Home">
@@ -33,14 +20,14 @@ const ErrorPage = ()=>{
                 <Link href="blogs/product">
                     Product
                 </Link>
+                <Link href="Calculator/cal2">
+                    Calculator
+                </Link>
                 </ul>
             </nav>
 
-            <h1>404 ERRORS</h1>
-    
-            <button onClick={handleInput}>back to home</button>
+        </div>
 
-        </>
-    )
+    );
 }
-export default ErrorPage;
+export default Navbar;
