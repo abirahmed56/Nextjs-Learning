@@ -105,3 +105,115 @@ a {
     color-scheme: dark;
   }
 }
+.heading_primary {
+  color: #3f1c1c;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+
+}
+.handle_default{
+  background: #fdf7f1;
+}
+.handle_entities{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #4b0a0a;
+  box-sizing: border-box;
+  display: block;
+  border: #131211;
+}
+.handle_header{
+  text-align: center;
+  color: #131211;
+}
+.notfound a{
+  font-family: "Maven Pro", sans-serif;;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: none;
+  background: #189Cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color:#fff;
+  font-weight: 400;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound a:hover {
+  background: #fff;
+  border-color: #189Cf0;
+  color: #189Cf0;
+}
+.text_box {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+body{
+  padding: 0%;
+  margin: 0%;
+}
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.menu-bar{
+  border-radius: 25px;
+  height: fit-content;
+  display: inline-flex;
+  background: white;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 0% 10px;
+  margin: 50px auto;
+  box-shadow: 0px 3px 20px 0px rgb(47, 47, 47);
+}
+.menu-bar li::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s;
+}
+.menu-bar li:hover{
+  color: black;
+}
+.menu-bar li:hover::before{
+  background: #fff;
+  color:#777;
+  box-shadow: 0px 3px 20px 0px rgb(47, 47, 47);
+}
+.menu-bar li{
+  list-style: none;
+  color: white;
+  font-weight: normal;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+nav{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  background: #fdf7f1;
+}
+

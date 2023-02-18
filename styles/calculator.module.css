@@ -1,4 +1,28 @@
+.keypad{
 
-body{
-    background: #817171;
-}
+    color: #3f1c1c;
+    margin: 15px 70% 18px  15px  ;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(60px, auto);
+  }
+  .button{
+    background: #000;
+    margin:3px;
+    color: wheat;
+    font-size: 28px;
+    
+  }
+  .inputNo{
+    background-color: #000;
+    color: white;
+    display: grid;
+    margin: 15px 70% 2px  15px ;
+    font-size: large;
+  }
+  .cal{
+    padding: 20%;
+  }
+  

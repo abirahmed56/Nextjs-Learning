@@ -5,24 +5,24 @@ const Navbar = ()=>{
         <div>
             <nav>
                 <ul className="menu-bar">
-                <Link href="blogs/Home">
-                    Home
-                </Link>
-                <Link href="blogs/about">
-                    About
-                </Link>
-                <Link href="blogs/contact">
-                    Contact
-                </Link>
-                <Link href="blogs">
-                    Blog
-                </Link>
-                <Link href="blogs/product">
-                    Product
-                </Link>
-                <Link href="Calculator/cal2">
-                    Calculator
-                </Link>
+                    <Link href="blogs/Home">
+                        Home
+                    </Link>
+                    <Link href="blogs/about">
+                        About
+                    </Link>
+                    <Link href="blogs/contact">
+                        Contact
+                    </Link>
+                    <Link href="blogs">
+                        Blog
+                    </Link>
+                    <Link href="blogs/product">
+                        Product
+                    </Link>
+                    <Link href="calculator/">
+                        Calculator
+                    </Link>
                 </ul>
             </nav>
 

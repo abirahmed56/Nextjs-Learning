@@ -1,7 +1,8 @@
+
 const Home = ()=>{
     return(
       <>
-        <h1>
+        <h1 className={styles.body}>
             hello world Home
         </h1>
 
