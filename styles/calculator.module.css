@@ -10,9 +10,8 @@
   }
   .button{
     background: #000;
-    margin:3px;
-    color: wheat;
-    font-size: 28px;
+    margin:0px 6px 0px 0px;
+    color: black;
     
   }
   .inputNo{
@@ -24,5 +23,10 @@
   }
   .cal{
     padding: 20%;
+  }
+  .btext{
+    background: #000;
+    color: white;
+    font-size: medium;
   }
   

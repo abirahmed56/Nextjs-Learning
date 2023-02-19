@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import {Button} from 'antd'
 import styles from '@/styles/calculator.module.css'
 
 
@@ -50,10 +51,10 @@ export default function Calculator () {
               value={num2}/>
           </div>
           <div className={styles.keypad}>
-              <button className={styles.button} onClick={add}>+</button>
-              <button className={styles.button} onClick={sub}>-</button>
-              <button className={styles.button} onClick={mul}>*</button>
-              <button className={styles.button} onClick={div}>/</button>
+              <Button type="primary" className={styles.button} onClick={add}><p className={styles.btext}>+</p></Button>
+              <Button type="primary"className={styles.button} onClick={sub}><p className={styles.btext}>-</p></Button>
+              <Button type="primary" className={styles.button} onClick={mul}><p className={styles.btext}>*</p></Button>
+              <Button type="primary"className={styles.button} onClick={div}><p className={styles.btext}>/</p></Button>
 
           </div>
           <div>
