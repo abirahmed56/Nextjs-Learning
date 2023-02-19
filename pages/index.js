@@ -1,4 +1,6 @@
-import Navbar from "./components/Navbar";
+import ListView from "@/components/ListView";
+import TableView from "@/components/TableView";
+import Navbar from "../components/Navbar";
 const index = ()=>{
   return(
     <div className="handle_bg">

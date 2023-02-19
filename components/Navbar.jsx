@@ -17,14 +17,15 @@ const Navbar = ()=>{
                     <Link href="blogs">
                         Blog
                     </Link>
-                    <Link href="blogs/product">
-                        Product
+                    <Link href="content">
+                        Content
                     </Link>
                     <Link href="calculator/">
                         Calculator
                     </Link>
                 </ul>
             </nav>
+            
 
         </div>
 
